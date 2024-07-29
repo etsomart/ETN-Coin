@@ -5224,7 +5224,7 @@ a:active {
         -webkit-box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
         box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.25);
         padding: 15px 0;
-        background-color: #013162;
+        background-color: #171a21;
     }
 
     .small-height .tm-primary-nav-list {
@@ -8002,6 +8002,24 @@ a:active {
 }
 
 @media screen and (max-width: 575px) {
+
+    .tm-social-btn-wrap.tm-style2 ul li {
+        width: 100% !important;
+    }
+
+    .tm-social-btn-wrap.tm-style2 ul {
+        width: 100%;
+        /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; */
+        /* -ms-flex-wrap: wrap; */
+        /* flex-wrap: wrap; */
+        display: inline-block !important;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
     .tm-token-status-bar {
         display: none;
     }
@@ -8963,8 +8981,8 @@ a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -8985,6 +9003,7 @@ a:active {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 35px;
+    justify-self: center;
 }
 
 .tm-social-btn-wrap.tm-style2 ul li a i,
@@ -8992,10 +9011,10 @@ a:active {
     height: 37px;
     width: 37px;
     border-radius: 50%;
-    border: 2px solid #77d102;
-    color: #77d102;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    border: 2px solid #ffb700;
+    color: #ffb700;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -9003,7 +9022,7 @@ a:active {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #0c4514;
+    background-color: #171a21;
     margin-right: 30px;
     -webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
@@ -9223,6 +9242,11 @@ a:active {
 }
 
 @media screen and (max-width: 767px) {
+    .tm-copyright {
+
+        display: block;
+    }
+
     .green-slider-nav-wrap {
         position: relative;
         top: 0;
@@ -9359,11 +9383,12 @@ body.tm-purple-color {
 }
 
 .tm-purple-color .tm-with-border.tm-btn {
-    background-color: #ffb700;
+    color: white;
+    background-color: transparent;
 }
 
 .tm-purple-color .tm-with-border.tm-btn:hover {
-    background-color: #eaa800;
+    background-color: transparent;
 }
 
 .tm-purple-color .tm-ethereum {
@@ -9717,11 +9742,11 @@ body.tm-purple-color {
 }
 
 .tm-purple-color .tab-content .tm-light-blue-c {
-    color: #46f2d4;
+    color: #ffffff;
 }
 
 .tm-purple-color .accordian-toggle {
-    border: 2px solid #ffb700;
+    border: 2px solid #ffffff;
     color: #013162;
     background-color: #1e0139;
 }
@@ -9793,7 +9818,7 @@ body.tm-purple-color {
 }
 
 .tm-purple-color .tm-top-footer .tm-footer-bar {
-    color: #46f2d4;
+    color: #ffffff;
 }
 
 .tm-purple-color .mailchimp input {
@@ -9940,7 +9965,7 @@ body.tm-purple-color {
 }
 
 .tm-purple-color #tm-preloader {
-    background-color: #220240;
+    background-color: #143b2b;
 }
 
 .tm-purple-color .tm-modal {
@@ -10756,5 +10781,64 @@ body.tm-orange-color {
         -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
         transform: scale(0.6);
+    }
+}
+
+.logos img {
+    width: 100%;
+    max-width: 60px;
+    /* Adjust the max-width to control the size of the logos */
+    margin: 10px auto;
+    /* Center the logos vertically and add some spacing */
+    /* display: block; */
+}
+
+.logoContainer {
+    justify-content: space-between !important;
+}
+
+.linkColor a {
+    color: #ffb700;
+}
+
+.linkColor a:hover {
+    color: #22b385;
+}
+
+.tm-preloader-in img {
+    width: 300px !important;
+    /* height: 300px !important; */
+}
+
+#tm-preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    /* Adjust background color as needed */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tm-preloader-in {
+    text-align: center;
+}
+
+.rotating-logo {
+    animation: rotate 1s linear infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
