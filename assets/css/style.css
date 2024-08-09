@@ -169,6 +169,10 @@ a:active {
     color: #ffb700 !important;
 }
 
+.whitePaperText {
+    color: white !important;
+}
+
 .etnText1 {
     color: #ffb700 !important;
     font-weight: 700;
@@ -6717,7 +6721,17 @@ a:active {
 }
 
 .tm-member-desc {
-    padding: 31px 15px 29px;
+    padding: 20px 15px 23px;
+}
+
+.tm-member-designation1 {
+    color: #ffb700;
+    font-weight: 600;
+}
+
+.tm-member-designation2 {
+
+    font-style: italic;
 }
 
 .tm-member-card .tm-member-thumb {
